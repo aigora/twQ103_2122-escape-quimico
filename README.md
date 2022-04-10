@@ -1,11 +1,16 @@
-# [Título del trabajo]
+ESCAPE QUÍMICO
 
-[Descripción breve del proyecto a realizar (2-3 frases).]
+ESCAPE QUÍMICO es un escape room ambientado en un laboratorio de investigación, en el que el usuario tendrá que superar ciertas pruebas y adversidades con sus propios conocimientos en química. 
 
 ## Integrantes del equipo
 
-[Nombres, apellidos, y usuario GitHub de los integrantes del equipo.]
+Ana Recio Chica @anarecio02
+María Pereyra
+Raúl del Campo
 
 ## Objetivos del trabajo
 
-[Lista de los objetivos que se persiguen con el trabajo propuesto.]
+Aprender conocimientos básicos de química
+Trabajo en equipo
+Trabajo contrareloj
+Trabajo bajo presión
