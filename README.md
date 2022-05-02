@@ -6,7 +6,7 @@ ESCAPE QUÍMICO es un escape room ambientado en un laboratorio de investigación
 
 Ana Recio Chica @anarecio02
 María Pereyra
-Raúl del Campo
+Raúl del Campo @LordDementus
 
 ## Objetivos del trabajo
 
