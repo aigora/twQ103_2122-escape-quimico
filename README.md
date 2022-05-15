@@ -1,6 +1,6 @@
 ESCAPE QUÍMICO
 
-ESCAPE QUÍMICO es un escape room ambientado en un laboratorio de investigación, en el que el usuario tendrá que superar ciertas pruebas y adversidades con sus propios conocimientos en química. No existe un mínimo de personas para participar y se pueden selecionar diferentes niveles de dificultad.
+ESCAPE QUÍMICO es un escape room ambientado en un laboratorio de investigación, en el que el usuario tendrá que superar ciertas pruebas y adversidades con sus propios conocimientos. No existe un mínimo de personas para participar dado que se puede jugara partida tras partida y se pueden selecionar diferentes niveles de dificultad.
 
 ## Integrantes del equipo
 
@@ -10,7 +10,6 @@ Raúl del Campo @LordDementus
 
 ## Objetivos del trabajo
 
-- Aprender conocimientos básicos de química
+- desafiar realmente tus conocimientos soble el juego
 - Trabajo en equipo
-- Trabajo contrareloj
 - Trabajo bajo presión
