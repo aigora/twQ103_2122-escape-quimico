@@ -17,15 +17,15 @@ typedef struct{
 }Pregunta;
 
 
-//Funci髇 en la que har閙os el nivel facil
-void facil(Pregunta* preguntas);
+//Funci贸n en la que har茅mos el nivel facil
+void nivel_mortal(Pregunta* preguntas);
 
 //Funcion en la que haremos el nivel medio
-void medio(Pregunta* preguntas);
+void nivel_heroe(Pregunta* preguntas);
 
 
 //Funcion en la que haremos el nivel dificil
-void dificil(Pregunta* preguntas);
+void nivel_dios(Pregunta* preguntas);
 
 
 //Funcion que llena la estructura de datos con las preguntas, sus repuestas y el resultado correcto
@@ -34,7 +34,7 @@ void llenar_estructuras(Pregunta* preguntas);
 
 int main(){
 	
-	int op;
+	int n;
 	nombre p[50];
 	Pregunta preguntas[50];
 	llenar_estructuras(preguntas);
@@ -42,20 +42,20 @@ int main(){
 	//printf("Introduce tu nombre: ");
 	//scanf("%s", p[0].nombre);
 	
-	while(op!=4){
-		printf("-----------Elija la opci髇 que quiera hacer-----------\n");
-		printf("[1] Hacer examen con preguntas aleatorias\n");
-		printf("[2] Hacer examen de un tema en concreto\n");
-		printf("[3] Ver las preguntas de un tema en concreto\n");
+	while(n!=4){
+		printf("-----------ELIJA QUE AVENTURA DESEA LLEVAR-----------\n");
+		printf("[1] Para aquellos mortalas que deseen una aventura \n");
+		printf("[2] Para aventureros que buscan un desafio de nivel\n");
+		printf("[3] Solo para aquellos mortales que buscan ser autenticos dioses\n (ADVERTENCIA!!!! No se admiren fallos, un solo erros te llevara a perderlo todo)\n");
 		printf("[4] Salir\n");
-		scanf("%d", &op);
+		scanf("%d", &n);
 		
 		system("cls");
 		
-		switch(op){
-			case 1: facil(preguntas);break;
-			case 2: medio(preguntas);break;
-			case 3: dificil(preguntas);break;
+		switch(n){
+			case 1: nivel_mortal(preguntas);break;
+			case 2: nivel_heroe(preguntas);break;
+			case 3: nivel_dios(preguntas);break;
 			case 4: break;			
 		}
 		
@@ -71,7 +71,7 @@ void llenar_estructuras(Pregunta* preguntas){
 
 	FILE* fPointer;
 	
-	fPointer = fopen("tema1.txt","r");
+	fPointer = fopen("desafios.txt","r");
 	char linea[250];
 	int i =0,j=5;
 	
@@ -100,7 +100,7 @@ void llenar_estructuras(Pregunta* preguntas){
 }
 
 
-void facil(Pregunta* preguntas){
+void nivel_mortal(Pregunta* preguntas){
 	
 	nombre p[50];
 	int puntuacion = 0,i,numero_aleatorio;
@@ -121,7 +121,7 @@ void facil(Pregunta* preguntas){
 	printf("COMIENZA EL DESAFIO\n\n");
 	
 	
-	/*En esta parte se muestran las preguntas por pantalla y se le pide al usuario la soluci髇*/
+	/*En esta parte se muestran las preguntas por pantalla y se le pide al usuario la soluci贸n*/
 	
 		for(i = 0; i<10;i++){
 		numero_aleatorio = rand() % 10+1;
@@ -131,12 +131,12 @@ void facil(Pregunta* preguntas){
 		printf("c) %s\n",preguntas[numero_aleatorio].opcion3);
 		printf("d) %s\n",preguntas[numero_aleatorio].opcion4);
 		
-		/*Hacemos un do while para que solo se puedan introducir n鷐eros del 1 al 4*/
+		/*Hacemos un do while para que solo se puedan introducir n煤meros del 1 al 4*/
 		do{
 			printf("Introduce la opcion correcta -> ");
 			scanf("%s",&eleccion);	
 			if(!strcmp(eleccion,"a") == 0 && !strcmp(eleccion,"b") == 0 && !strcmp(eleccion,"c") == 0 && !strcmp(eleccion,"d") == 0){	
-				printf("Debes introducir una opci髇 correcta\n");
+				printf("Debes introducir una opcion valida\n");
 			}
 		}while(!strcmp(eleccion,"a") == 0 && !strcmp(eleccion,"b") == 0 && !strcmp(eleccion,"c") == 0 && !strcmp(eleccion,"d") == 0);
 		
@@ -144,7 +144,7 @@ void facil(Pregunta* preguntas){
 		
 		
 		if(strcmp(eleccion,preguntas[i].correcta)==0){
-			puntuacion++;
+			puntuacion=puntuacion+100;
 		}
 		
 		system("cls"); 
@@ -152,15 +152,15 @@ void facil(Pregunta* preguntas){
 	}
 	
 	system("cls"); 
-	 
+	if(puntuacion<500){
+		printf("No es suficiente, sigue entenando para la proxima\n");
+	}
+	esle(puntuacion>=500){
+		printf("No esta mal para ser un mortal, prueba con el nivel heroe\n");
+	}
 	printf("%s, tu nivel en la aventura es: ", p[0].nombre);
-	printf("%i/10 \n", puntuacion);
-	if(){
-		printf("");
-	}
-	esle{
-		printf("");
-	}
+	printf("%i \n", puntuacion);
+
 	printf("Pulse una tecla para elegir volver a jugar o salir");
 	
 	getch();
@@ -168,7 +168,7 @@ void facil(Pregunta* preguntas){
 	system("cls"); 
 }
 
-void medio(Pregunta* preguntas){
+void nivel_heroe(Pregunta* preguntas){
 	
 	nombre p[50];
 	int puntuacion = 0,i,numero_aleatorio;
@@ -186,10 +186,10 @@ void medio(Pregunta* preguntas){
 	
 	system("cls");
 	
-	printf("COMIENZA EL EXAMEN\n\n");
+	printf("COMIENZA EL DESAFIO\n\n");
 	
 	
-	/*En esta parte se muestran las preguntas por pantalla y se le pide al usuario la soluci髇*/
+	/*En esta parte se muestran las preguntas por pantalla y se le pide al usuario la soluci贸n*/
 	
 		for(i = 0; i<10;i++){
 		numero_aleatorio = rand() % 10+1;
@@ -199,12 +199,12 @@ void medio(Pregunta* preguntas){
 		printf("c) %s\n",preguntas[numero_aleatorio].opcion3);
 		printf("d) %s\n",preguntas[numero_aleatorio].opcion4);
 		
-		/*Hacemos un do while para que solo se puedan introducir n鷐eros del 1 al 4*/
+		/*Hacemos un do while para que solo se puedan introducir n煤meros del 1 al 4*/
 		do{
 			printf("Introduce la opcion correcta -> ");
 			scanf("%s",&eleccion);	
 			if(!strcmp(eleccion,"a") == 0 && !strcmp(eleccion,"b") == 0 && !strcmp(eleccion,"c") == 0 && !strcmp(eleccion,"d") == 0){	
-				printf("Debes introducir una opci髇 correcta\n");
+				printf("Debes introducir una opcion valida\n");
 			}
 		}while(!strcmp(eleccion,"a") == 0 && !strcmp(eleccion,"b") == 0 && !strcmp(eleccion,"c") == 0 && !strcmp(eleccion,"d") == 0);
 		
@@ -212,17 +212,21 @@ void medio(Pregunta* preguntas){
 		
 		
 		if(strcmp(eleccion,preguntas[i].correcta)==0){
-			puntuacion++;
+			puntuacion=puntuacion+200;
 		}
-		
+		else{
+			puntuacion=puntuacion-50;
+		}
 		system("cls"); 
 		
 	}
 	
 	system("cls"); 
-	 
-	printf("%s, tu nota es ", p[0].nombre);
-	printf("%i/10 \n", puntuacion);
+	if(puntuacio<1000){
+		printf("No mereces llamarte heroe, vuelve a casa con tu madre");
+	} 
+	printf("%s, tu puntuacion es ", p[0].nombre);
+	printf("%i \n", puntuacion);
 	printf("Pulse una tecla para continuar");
 	
 	getch();
@@ -230,7 +234,7 @@ void medio(Pregunta* preguntas){
 	system("cls"); 
 }
 
-void dificil(Pregunta* preguntas){
+void nivel_dios(Pregunta* preguntas){
 	
 	nombre p[50];
 	int puntuacion = 0,i,numero_aleatorio;
@@ -248,10 +252,10 @@ void dificil(Pregunta* preguntas){
 	
 	system("cls");
 	
-	printf("COMIENZA EL EXAMEN\n\n");
+	printf("COMIENZA EL DESAFIO\n\n");
 	
 	
-	/*En esta parte se muestran las preguntas por pantalla y se le pide al usuario la soluci髇*/
+	/*En esta parte se muestran las preguntas por pantalla y se le pide al usuario la soluci贸n*/
 	
 		for(i = 0; i<10;i++){
 		numero_aleatorio = rand() % 10+1;
@@ -261,12 +265,12 @@ void dificil(Pregunta* preguntas){
 		printf("c) %s\n",preguntas[numero_aleatorio].opcion3);
 		printf("d) %s\n",preguntas[numero_aleatorio].opcion4);
 		
-		/*Hacemos un do while para que solo se puedan introducir n鷐eros del 1 al 4*/
+		/*Hacemos un do while para que solo se puedan introducir n煤meros del 1 al 4*/
 		do{
 			printf("Introduce la opcion correcta -> ");
 			scanf("%s",&eleccion);	
 			if(!strcmp(eleccion,"a") == 0 && !strcmp(eleccion,"b") == 0 && !strcmp(eleccion,"c") == 0 && !strcmp(eleccion,"d") == 0){	
-				printf("Debes introducir una opci髇 correcta\n");
+				printf("Debes introducir una opcion valida\n");
 			}
 		}while(!strcmp(eleccion,"a") == 0 && !strcmp(eleccion,"b") == 0 && !strcmp(eleccion,"c") == 0 && !strcmp(eleccion,"d") == 0);
 		
@@ -274,7 +278,7 @@ void dificil(Pregunta* preguntas){
 		
 		
 		if(strcmp(eleccion,preguntas[i].correcta)==0){
-			puntuacion++;
+			puntuacion=puntuacion+300;
 		}
 		
 		system("cls"); 
@@ -282,9 +286,17 @@ void dificil(Pregunta* preguntas){
 	}
 	
 	system("cls"); 
-	 
-	printf("%s, tu nota es ", p[0].nombre);
-	printf("%i/10 \n", puntuacion);
+	if(puntuacion==3000){
+		printf("Enhorabuena, has logrado superar el desafio de los dioses\n");
+		printf("%s, tu nivel de dios es de", p[0].nombre);
+	    printf("%i \n", puntuacion);
+	} 
+	else{
+		puntuacion=0;
+		printf("No mereces estar entre nosotros, sigues siendo un mortal\n GAME OVER\n");
+		printf("%s, tu puntuacion es ", p[0].nombre);
+	    printf("%i \n", puntuacion);
+	}
 	printf("Pulse una tecla para continuar");
 	
 	getch();
