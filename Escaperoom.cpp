@@ -39,8 +39,8 @@ int main(){
 	Pregunta preguntas[50];
 	llenar_estructuras(preguntas);
 	
-	//printf("Introduce tu nombre: ");
-	//scanf("%s", p[0].nombre);
+	prinft("¡Bienvenido! Introduce tu nombre\n");
+	scanf("%s", p[0].nombre);
 	
 	while(n!=4){
 		printf("-----------ELIJA QUE AVENTURA DESEA LLEVAR-----------\n");
@@ -121,7 +121,7 @@ void nivel_mortal(Pregunta* preguntas){
 	printf("COMIENZA EL DESAFIO\n\n");
 	
 	
-	/*En esta parte se muestran las preguntas por pantalla y se le pide al usuario la soluciÃ³n*/
+	/*En esta parte se muestran las preguntas por pantalla y se le pide al usuario la solución*/
 	
 		for(i = 0; i<10;i++){
 		numero_aleatorio = rand() % 10+1;
@@ -131,7 +131,7 @@ void nivel_mortal(Pregunta* preguntas){
 		printf("c) %s\n",preguntas[numero_aleatorio].opcion3);
 		printf("d) %s\n",preguntas[numero_aleatorio].opcion4);
 		
-		/*Hacemos un do while para que solo se puedan introducir nÃºmeros del 1 al 4*/
+		/*Hacemos un do while para que solo se puedan introducir números del 1 al 4*/
 		do{
 			printf("Introduce la opcion correcta -> ");
 			scanf("%s",&eleccion);	
@@ -189,7 +189,7 @@ void nivel_heroe(Pregunta* preguntas){
 	printf("COMIENZA EL DESAFIO\n\n");
 	
 	
-	/*En esta parte se muestran las preguntas por pantalla y se le pide al usuario la soluciÃ³n*/
+	/*En esta parte se muestran las preguntas por pantalla y se le pide al usuario la solución*/
 	
 		for(i = 0; i<10;i++){
 		numero_aleatorio = rand() % 10+1;
@@ -199,7 +199,7 @@ void nivel_heroe(Pregunta* preguntas){
 		printf("c) %s\n",preguntas[numero_aleatorio].opcion3);
 		printf("d) %s\n",preguntas[numero_aleatorio].opcion4);
 		
-		/*Hacemos un do while para que solo se puedan introducir nÃºmeros del 1 al 4*/
+		/*Hacemos un do while para que solo se puedan introducir números del 1 al 4*/
 		do{
 			printf("Introduce la opcion correcta -> ");
 			scanf("%s",&eleccion);	
@@ -255,7 +255,7 @@ void nivel_dios(Pregunta* preguntas){
 	printf("COMIENZA EL DESAFIO\n\n");
 	
 	
-	/*En esta parte se muestran las preguntas por pantalla y se le pide al usuario la soluciÃ³n*/
+	/*En esta parte se muestran las preguntas por pantalla y se le pide al usuario la solución*/
 	
 		for(i = 0; i<10;i++){
 		numero_aleatorio = rand() % 10+1;
