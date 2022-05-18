@@ -1,63 +1,63 @@
 1. ¿Cuál es el protagonista de la historia?
-a) Hades
-b) Poseidón
-c) Kratos
-d) Afrodita
-
+Hades
+Poseidón
+Kratos
+Afrodita
+c
 2. ¿Qué era antes Kratos?
-a) Un humilde carpintero
-b) Un exitoso capitán espartano
-c) Un existoso capitán bárbaro
-d) Un rey
-
+Un humilde carpintero
+Un exitoso capitán espartano
+Un existoso capitán bárbaro
+Un rey
+b
 3. ¿Con qué dios hizo un pacto antes de caer derrotado?
-a) Zeus, dios del trueno
-b) Hades, dios del inframundo
-c) Atenea, diosa de la sabiduría
-d) Ares, dios de la guerra
-
+Zeus, dios del trueno
+Hades, dios del inframundo
+Atenea, diosa de la sabiduría
+Ares, dios de la guerra
+d
 4. ¿En qué consistía el pacto con Ares?
-a) Prometía ser su siervo a cambio de poder
-b) Prometía comida a cambio de poder 
-c) Prometía poder a cambio de sabiduría
-d) Prometía armas a cambio de poder
-
+Prometía ser su siervo a cambio de poder
+Prometía comida a cambio de poder 
+Prometía poder a cambio de sabiduría
+Prometía armas a cambio de poder
+a
 5. ¿Qué arma le entregó Ares a Kratos?
-a) El martillo de Thor
-b) Un cuchillo
-c) Las espadas del caos
-d) Una pistola
-
+El martillo de Thor
+Un cuchillo
+Las espadas del caos
+Una pistola
+c
 6. ¿Cuál de los siguientes nombres es un enemigo al que se enfrentó Kratos?
-a) Cancerbero
-b) Hidra
-c) Vulcano
-d) Apolo
-
+Cancerbero
+Hidra
+Vulcano
+Apolo
+b
 7. ¿Quién le entrega su poder a Kratos para vencer a la hidra?
-a) Zeus
-b) Dionisio
-c) Hermes
-d) Poseidón
-
+Zeus
+Dionisio
+Hermes
+Poseidón
+a
 8. ¿Quién le promete librarse de sus visiones a cambio de un trabajo final?
-a) Afrodita
-b) Artemisa
-c) Atenea
-d) Hera
-
+Afrodita
+Artemisa
+Atenea
+Hera
+c
 9. ¿Qué es la Caja de Pandora?
-a) Una caja normal
-b) Una caja con armas
-c) Una caja de música
-d) Un artefacto mítico que otorga el poder necesario para matar a un Dios
-
+Una caja normal
+Una caja con armas
+Una caja de música
+Un artefacto mítico que otorga el poder necesario para matar a un Dios
+d
 10. ¿Quién tenía la Caja de Pandora?
-a) Titán Colosus
-b) Titán Cronos
-c) Titán Urano
-d) Titán Gea
-
+Titán Colosus
+Titán Cronos
+Titán Urano
+Nada
+d
 
 
 
