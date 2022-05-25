@@ -16,7 +16,17 @@ typedef struct{
 	char correcta[250];
 }Pregunta;
 
-
+void banner (){
+	
+printf("_____________________________________________________________________________________________________________________________________________________\n");
+printf("MMMMMM      MMMMMM         MMMMMMM      MMMMMMMMM     MMMMMMMMM        MMMMMMMMM  MMMMMMMMM        MM                      MM    MMMMMMM    MMMMMMMMM\n");
+printf("MM          MM            MM     MM     MM      M     MM               MM     MM  MM                MM                   MM     MM     MM   MM     MM\n");
+printf(" MM         MM            MM     MM     MMMMMMMMM     MMMMMM           MM     MM  MMMMM              MM                 MM      MM     MM   MM     MM\n");
+printf("   MM       MM            MMMMMMMMM     MM            MMMMMM           MM     MM  MM                  MM     MM       MM        MMMMMMMMM   MM    MM\n");
+printf("    MM      MM            MM     MM     MM            MM               MM     MM  MM                   MM  MM   MM  MM          MM     MM   MM  MM   \n");
+printf("MMMMMM      MMMMMM        MM     MM     MM            MMMMMMMMM        MMMMMMMMM  MM                     MM       MM            MM     MM   MM    MMM\n");
+printf("_____________________________________________________________________________________________________________________________________________________\n");
+}
 //Función en la que harémos el nivel facil
 void nivel_mortal(Pregunta* preguntas);
 
@@ -33,48 +43,56 @@ void llenar_estructuras(Pregunta* preguntas);
 
 
 int main(){
-	
+	banner ();
 	int n;
+	int numJugadores;
 	nombre p[50];
 	Pregunta preguntas[50];
 	llenar_estructuras(preguntas);
 	
-	prinft("�Bienvenido! Introduce tu nombre\n");
-	scanf("%s", p[0].nombre);
-	
+	printf("BIENVENIDO A SCAPE OF WAR\n");
+	do {
+	printf("Introduce el numero de guerreros que vais a participar, el maximo son 4\n");
+	scanf("%d",&numJugadores);
+	printf("Has seleccionado %d jugadores",numJugadores);
+	} while (numJugadores>4);
+
 	while(n!=4){
 		printf("-----------ELIJA QUE AVENTURA DESEA LLEVAR-----------\n");
-		printf("[1] Para aquellos mortalas que deseen una aventura \n");
+		printf("[1] Para aquellos mortales que deseen una aventura \n");
 		printf("[2] Para aventureros que buscan un desafio de nivel\n");
-		printf("[3] Solo para aquellos mortales que buscan ser autenticos dioses\n (ADVERTENCIA!!!! No se admiren fallos, un solo erros te llevara a perderlo todo)\n");
+		printf("[3] Solo para aquellos mortales que buscan ser autenticos dioses\n (ADVERTENCIA!!!! No se admiten fallos, un solo error te llevara a perderlo todo)\n");
 		printf("[4] Salir\n");
 		scanf("%d", &n);
 		
 		system("cls");
 		
 		switch(n){
-			case 1: nivel_mortal(preguntas);break;
-			case 2: nivel_heroe(preguntas);break;
-			case 3: nivel_dios(preguntas);break;
-			case 4: break;			
+			case 1: nivel_mortal(preguntas);
+			printf("Has elegido nivel mortal\n");
+			break;
+			case 2: nivel_heroe(preguntas);
+			printf("Has elegido nivel heroe\n");
+			break;
+			case 3: nivel_dios(preguntas);
+			printf("Has elegido nivel dios\n");
+			break;
+			case 4: 
+			("Hasta pronto\n");
+			break;			
 		}
 		
 	}	
 	return 0;
 }
 
-
-
-
 void llenar_estructuras(Pregunta* preguntas){
 	
-
 	FILE* fPointer;
 	
 	fPointer = fopen("desafios.txt","r");
 	char linea[250];
 	int i =0,j=5;
-	
 	
 	while(!feof(fPointer)){
 		
