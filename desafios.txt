@@ -1,65 +1,123 @@
-1. ¿Cuál es el protagonista de la historia?
+1. ¿Cual es el protagonista de la historia?
 Hades
-Poseidón
+Poseidon
 Kratos
 Afrodita
 c
-2. ¿Qué era antes Kratos?
+2. ¿Que era antes Kratos?
 Un humilde carpintero
-Un exitoso capitán espartano
-Un existoso capitán bárbaro
+Un exitoso capitan espartano
+Un existoso capitan barbaro
 Un rey
 b
-3. ¿Con qué dios hizo un pacto antes de caer derrotado?
+3. ¿Con que dios hizo un pacto antes de caer derrotado?
 Zeus, dios del trueno
 Hades, dios del inframundo
-Atenea, diosa de la sabiduría
+Atenea, diosa de la sabiduria
 Ares, dios de la guerra
 d
-4. ¿En qué consistía el pacto con Ares?
-Prometía ser su siervo a cambio de poder
-Prometía comida a cambio de poder 
-Prometía poder a cambio de sabiduría
-Prometía armas a cambio de poder
+4. ¿En qué consistia el pacto con Ares?
+Prometia ser su siervo a cambio de poder
+Prometia comida a cambio de poder 
+Prometia poder a cambio de sabiduria
+Prometia armas a cambio de poder
 a
-5. ¿Qué arma le entregó Ares a Kratos?
+5. ¿Que arma le entrego Ares a Kratos?
 El martillo de Thor
 Un cuchillo
 Las espadas del caos
 Una pistola
 c
-6. ¿Cuál de los siguientes nombres es un enemigo al que se enfrentó Kratos?
+6. ¿Cual de los siguientes nombres es un enemigo al que se enfrento Kratos?
 Cancerbero
 Hidra
 Vulcano
 Apolo
 b
-7. ¿Quién le entrega su poder a Kratos para vencer a la hidra?
+7. ¿Quien le entrega su poder a Kratos para vencer a la hidra?
 Zeus
 Dionisio
 Hermes
 Poseidón
 a
-8. ¿Quién le promete librarse de sus visiones a cambio de un trabajo final?
+8. ¿Quien le promete librarse de sus visiones a cambio de un trabajo final?
 Afrodita
 Artemisa
 Atenea
 Hera
 c
-9. ¿Qué es la Caja de Pandora?
+9. ¿Que es la Caja de Pandora?
 Una caja normal
 Una caja con armas
 Una caja de música
-Un artefacto mítico que otorga el poder necesario para matar a un Dios
+Un artefacto mitico que otorga el poder necesario para matar a un Dios
 d
-10. ¿Quién tenía la Caja de Pandora?
-Titán Colosus
-Titán Cronos
-Titán Urano
+10. ¿Quién tenia la Caja de Pandora?
+Titan Colosus
+Titan Cronos
+Titan Urano
 Nada
 d
-
-
+11. ¿Que debia alcanzar Kratos para conocer la verdad?
+Oraculo de Delfos
+Oraculo de Kratos
+Oraculo de Ares
+Oraculo de Esparta
+a
+12. ¿Quien asesina a Kratos?
+Cronos
+Atenea
+Zeus
+Ares
+c
+13. ¿Como se llama el hermano de Kratos?
+Hermes
+Cerix
+Deimos 
+Argos
+c
+14. ¿Por que mata Kratos a Tanatos?
+Porque le ataco el primero
+Porque asesino a su hermano
+Porque le robo 
+Por un encargo
+b
+15. ¿Que le propone Gaia, la titanide?
+Ayuda a cambio de que destrone a Zeus del Olimpo
+Ayuda a cambio de la Caja de Pandora
+Ayuda a cambio de que destrone a los titanes
+Ayuda a cambio de la espada del Caos
+a
+16. ¿Que tenia que hacer Kratos para volver al pasado?
+Usar la Caja de Pandora
+Hablar con Atenea
+Hacer un pacto con Zeus
+Ir a la camara a las hermanas del destino
+d
+17. ¿Por que se sacrifica Atenea?
+Por amor 
+Porque si Kratos asesina a Zeus acabaria con todo el Olimpo
+Porque no quiere que Kratos se haga con el poder
+Por pena
+b
+18. ¿Quien resulta ser el padre de Kratos?
+Zeus
+Poseidon
+Hermes
+Ares
+a
+19. ¿Donde se libra la ultima batalla?
+En Esparta
+En Rodes
+En el interior de la titánide Gaia
+En Creta
+a
+20. ¿Como se llama el hijo de Kratos?
+Gilles
+Neil
+Cleo
+Atreus
+d
 
 
 
