@@ -4,8 +4,7 @@ SCAPE OF WAR es un escape room ambientado en el videojuego Gof of War, en el que
 
 ## Integrantes del equipo
 
-Ana Recio Chica @anarecio02
-María Pereyra
+Ana Recio Chica @anarecio02 
 Raúl del Campo @LordDementus
 
 ## Objetivos del trabajo
