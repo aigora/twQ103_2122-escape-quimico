@@ -18,7 +18,7 @@ typedef struct{
 //Funcion para que se imprima el banner del programa
 void banner ();
 
-//FunciÃ³n en la que harÃ©mos el nivel facil
+//Funcion en la que haremos el nivel facil
 void nivel_mortal(Pregunta* preguntas);
 
 //Funcion en la que haremos el nivel medio
@@ -151,7 +151,7 @@ void nivel_mortal(Pregunta* preguntas){
 		printf("c) %s\n",preguntas[i].opcion3);
 		printf("d) %s\n",preguntas[i].opcion4);
 		
-		/*Hacemos un do while para que solo se puedan introducir números del 1 al 4*/
+		/*Hacemos un do while para que solo se puedan introducir a b c d*/
 		do{
 			printf("Introduce la opcion correcta -> ");
 			scanf("%s",&eleccion);	
@@ -217,7 +217,7 @@ void nivel_heroe(Pregunta* preguntas){
 		printf("c) %s\n",preguntas[i].opcion3);
 		printf("d) %s\n",preguntas[i].opcion4);
 		
-		/*Hacemos un do while para que solo se puedan introducir números del 1 al 4*/
+		/*Hacemos un do while para que solo se puedan introducir a b c d*/
 		do{
 			printf("Introduce la opcion correcta -> ");
 			scanf("%s",&eleccion);	
@@ -281,7 +281,7 @@ void nivel_dios(Pregunta* preguntas){
 		printf("c) %s\n",preguntas[i].opcion3);
 		printf("d) %s\n",preguntas[i].opcion4);
 		
-		/*Hacemos un do while para que solo se puedan introducir números del 1 al 4*/
+		/*Hacemos un do while para que solo se puedan introducir a b c d*/
 		do{
 			printf("Introduce la opcion correcta -> ");
 			scanf("%s",&eleccion);	
