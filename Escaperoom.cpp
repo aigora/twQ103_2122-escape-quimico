@@ -18,16 +18,16 @@ typedef struct{
 
 void banner (){
 	
-printf("_____________________________________________________________________________________________________________________________________________________\n");
-printf("MMMMMM      MMMMMM         MMMMMMM      MMMMMMMMM     MMMMMMMMM        MMMMMMMMM  MMMMMMMMM        MM                      MM    MMMMMMM    MMMMMMMMM\n");
-printf("MM          MM            MM     MM     MM      M     MM               MM     MM  MM                MM                   MM     MM     MM   MM     MM\n");
-printf(" MM         MM            MM     MM     MMMMMMMMM     MMMMMM           MM     MM  MMMMM              MM                 MM      MM     MM   MM     MM\n");
-printf("   MM       MM            MMMMMMMMM     MM            MMMMMM           MM     MM  MM                  MM     MM       MM        MMMMMMMMM   MM    MM\n");
-printf("    MM      MM            MM     MM     MM            MM               MM     MM  MM                   MM  MM   MM  MM          MM     MM   MM  MM   \n");
-printf("MMMMMM      MMMMMM        MM     MM     MM            MMMMMMMMM        MMMMMMMMM  MM                     MM       MM            MM     MM   MM    MMM\n");
-printf("_____________________________________________________________________________________________________________________________________________________\n");
+printf("______________________________________________________________________________________________________________________________________ \n");
+printf("MMMMMM      MMMMMM         MMMMMMM      MMMMMMMMM     MMMMMMMMM        MMMMMMMMM  MMMMMMMMM        MMMMMMMMM   MMMMMMMM  MMMMM         \n");
+printf("MM          MM            MM     MM     MM      MM    MM               MM     MM  MM               MM          MM    MM  MM   MM       \n");
+printf(" MM         MM            MM     MM     MMMMMMMMM     MMMMMM           MM     MM  MMMMM            MM          MM    MM  MM    MM      \n");
+printf("   MM       MM            MMMMMMMMM     MM            MMMMMM           MM     MM  MM               MM   MMMM   MM    MM  MM   MM       \n");
+printf("    MM      MM            MM     MM     MM            MM               MM     MM  MM               MM     MM   MM    MM  MM   MM       \n");
+printf("MMMMMM      MMMMMM        MM     MM     MM            MMMMMMMMM        MMMMMMMMM  MM               MMMMMMMMM   MMMMMMMM  MM MM         \n");
+prinft("_______________________________________________________________________________________________________________________________________\n");
 }
-//Función en la que harémos el nivel facil
+//Funcion en la que harémos el nivel facil
 void nivel_mortal(Pregunta* preguntas);
 
 //Funcion en la que haremos el nivel medio
@@ -55,7 +55,7 @@ int main(){
 	printf("Introduce el numero de guerreros que vais a participar, el maximo son 4\n");
 	scanf("%d",&numJugadores);
 	printf("Has seleccionado %d jugadores",numJugadores);
-	} while (numJugadores>4);
+	} while (numJugadores>4); // Si introduce un numero mayor de 4 jugadores, se lo vuelve a pedir al usuario
 
 	while(n!=4){
 		printf("-----------ELIJA QUE AVENTURA DESEA LLEVAR-----------\n");
@@ -92,7 +92,7 @@ void llenar_estructuras(Pregunta* preguntas){
 	
 	fPointer = fopen("desafios.txt","r");
 	char linea[250];
-	int i =0,j=5;
+	int i=0,j=5;
 	
 	while(!feof(fPointer)){
 		
@@ -173,12 +173,17 @@ void nivel_mortal(Pregunta* preguntas){
 	if(puntuacion<500){
 		printf("No es suficiente, sigue entenando para la proxima\n");
 	}
-	esle(puntuacion>=500){
+	else (puntuacion>=500){
 		printf("No esta mal para ser un mortal, prueba con el nivel heroe\n");
 	}
 	printf("%s, tu nivel en la aventura es: ", p[0].nombre);
 	printf("%i \n", puntuacion);
-
+    printf("Echale un ojo a las recompensas obtenidas\n");
+    
+    FILE * fPointer;
+	fPointer = fopen("recompensasMortal.txt", "r");
+	fclose(fPointer);
+	
 	printf("Pulse una tecla para elegir volver a jugar o salir");
 	
 	getch();
@@ -240,12 +245,18 @@ void nivel_heroe(Pregunta* preguntas){
 	}
 	
 	system("cls"); 
-	if(puntuacio<1000){
+	if(puntuacion<1000){
 		printf("No mereces llamarte heroe, vuelve a casa con tu madre");
 	} 
 	printf("%s, tu puntuacion es ", p[0].nombre);
 	printf("%i \n", puntuacion);
 	printf("Pulse una tecla para continuar");
+	printf("Echale un ojo a las recompensas obtenidas\n");
+    
+    FILE * fPointer;
+	fPointer = fopen("recompensasHeroe.txt", "r");
+	fclose(fPointer);
+	
 	
 	getch();
 	
@@ -316,6 +327,12 @@ void nivel_dios(Pregunta* preguntas){
 	    printf("%i \n", puntuacion);
 	}
 	printf("Pulse una tecla para continuar");
+	
+	printf("Echale un ojo a las recompensas obtenidas\n");
+    
+    FILE * fPointer;
+	fPointer = fopen("recompensasDios.txt", "r");
+	fclose(fPointer);
 	
 	getch();
 	

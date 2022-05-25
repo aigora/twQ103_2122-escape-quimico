@@ -1,0 +1,3 @@
+<=0 puntos Nada 
+<1000 puntos Invitación a jugar el modo mortal
+>1000 puntos 1000 gemas e invitación a jugar el modo héroe
