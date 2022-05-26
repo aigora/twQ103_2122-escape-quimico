@@ -15,19 +15,10 @@ typedef struct{
 	char opcion4[250];
 	char correcta[250];
 }Pregunta;
+//Funcion para que se imprima el banner del programa
+void banner ();
 
-void banner (){
-	
-printf("______________________________________________________________________________________________________________________________________ \n");
-printf("MMMMMM      MMMMMM         MMMMMMM      MMMMMMMMM     MMMMMMMMM        MMMMMMMMM  MMMMMMMMM        MMMMMMMMM   MMMMMMMM  MMMMM         \n");
-printf("MM          MM            MM     MM     MM      MM    MM               MM     MM  MM               MM          MM    MM  MM   MM       \n");
-printf(" MM         MM            MM     MM     MMMMMMMMM     MMMMMM           MM     MM  MMMMM            MM          MM    MM  MM    MM      \n");
-printf("   MM       MM            MMMMMMMMM     MM            MMMMMM           MM     MM  MM               MM   MMMM   MM    MM  MM   MM       \n");
-printf("    MM      MM            MM     MM     MM            MM               MM     MM  MM               MM     MM   MM    MM  MM   MM       \n");
-printf("MMMMMM      MMMMMM        MM     MM     MM            MMMMMMMMM        MMMMMMMMM  MM               MMMMMMMMM   MMMMMMMM  MM MM         \n");
-prinft("_______________________________________________________________________________________________________________________________________\n");
-}
-//Funcion en la que harÃ©mos el nivel facil
+//Funcion en la que haremos el nivel facil
 void nivel_mortal(Pregunta* preguntas);
 
 //Funcion en la que haremos el nivel medio
@@ -55,7 +46,7 @@ int main(){
 	printf("Introduce el numero de guerreros que vais a participar, el maximo son 4\n");
 	scanf("%d",&numJugadores);
 	printf("Has seleccionado %d jugadores",numJugadores);
-	} while (numJugadores>4); // Si introduce un numero mayor de 4 jugadores, se lo vuelve a pedir al usuario
+	} while (numJugadores>4);
 
 	while(n!=4){
 		printf("-----------ELIJA QUE AVENTURA DESEA LLEVAR-----------\n");
@@ -86,13 +77,26 @@ int main(){
 	return 0;
 }
 
+void banner (){	
+printf("_____________________________________________________________________________________________________________________________________________________\n");
+printf("MMMMMM      MMMMMM         MMMMMMM      MMMMMMMMM     MMMMMMMMM        MMMMMMMMM  MMMMMMMMM        MM                     MM     MMMMMMM    MMMMMMMMM\n");
+printf("MM          MM            MM     MM     MM      M     MM               MM     MM  MM                MM                   MM     MM     MM   MM     MM\n");
+printf(" MM         MM            MM     MM     MMMMMMMMM     MMMMMM           MM     MM  MMMMM              MM                MM       MM     MM   MM     MM\n");
+printf("   MM       MM            MMMMMMMMM     MM            MMMMMM           MM     MM  MM                  MM     MM       MM        MMMMMMMMM   MM    MM\n");
+printf("    MM      MM            MM     MM     MM            MM               MM     MM  MM                   MM  MM   MM  MM          MM     MM   MM  MM   \n");
+printf("MMMMMM      MMMMMM        MM     MM     MM            MMMMMMMMM        MMMMMMMMM  MM                     MM       MM            MM     MM   MM    MMM\n");
+printf("_____________________________________________________________________________________________________________________________________________________\n");
+}
+
 void llenar_estructuras(Pregunta* preguntas){
 	
+
 	FILE* fPointer;
 	
 	fPointer = fopen("desafios.txt","r");
 	char linea[250];
-	int i=0,j=5;
+	int i =0,j=5;
+	
 	
 	while(!feof(fPointer)){
 		
@@ -121,9 +125,8 @@ void llenar_estructuras(Pregunta* preguntas){
 void nivel_mortal(Pregunta* preguntas){
 	
 	nombre p[50];
-	int puntuacion = 0,i,numero_aleatorio;
-	char eleccion[5];
-	srand(time(NULL));		
+	int puntuacion = 0,i;
+	char eleccion[5];	
 	
 	printf("Introduce tu nombre: ");
 	scanf("%s", p[0].nombre);
@@ -139,17 +142,16 @@ void nivel_mortal(Pregunta* preguntas){
 	printf("COMIENZA EL DESAFIO\n\n");
 	
 	
-	/*En esta parte se muestran las preguntas por pantalla y se le pide al usuario la solución*/
+	/*En esta parte se muestran las preguntas por pantalla y se le pide al usuario la soluciÃ³n*/
 	
 		for(i = 0; i<10;i++){
-		numero_aleatorio = rand() % 10+1;
-		printf("%s\n",preguntas[numero_aleatorio].pregunta);
-		printf("a) %s\n",preguntas[numero_aleatorio].opcion1);
-		printf("b) %s\n",preguntas[numero_aleatorio].opcion2);
-		printf("c) %s\n",preguntas[numero_aleatorio].opcion3);
-		printf("d) %s\n",preguntas[numero_aleatorio].opcion4);
+		printf("%s\n",preguntas[i].pregunta);
+		printf("a) %s\n",preguntas[i].opcion1);
+		printf("b) %s\n",preguntas[i].opcion2);
+		printf("c) %s\n",preguntas[i].opcion3);
+		printf("d) %s\n",preguntas[i].opcion4);
 		
-		/*Hacemos un do while para que solo se puedan introducir números del 1 al 4*/
+		/*Hacemos un do while para que solo se puedan introducir a b c d*/
 		do{
 			printf("Introduce la opcion correcta -> ");
 			scanf("%s",&eleccion);	
@@ -173,17 +175,12 @@ void nivel_mortal(Pregunta* preguntas){
 	if(puntuacion<500){
 		printf("No es suficiente, sigue entenando para la proxima\n");
 	}
-	else (puntuacion>=500){
+	else{
 		printf("No esta mal para ser un mortal, prueba con el nivel heroe\n");
 	}
 	printf("%s, tu nivel en la aventura es: ", p[0].nombre);
 	printf("%i \n", puntuacion);
-    printf("Echale un ojo a las recompensas obtenidas\n");
-    
-    FILE * fPointer;
-	fPointer = fopen("recompensasMortal.txt", "r");
-	fclose(fPointer);
-	
+
 	printf("Pulse una tecla para elegir volver a jugar o salir");
 	
 	getch();
@@ -194,9 +191,8 @@ void nivel_mortal(Pregunta* preguntas){
 void nivel_heroe(Pregunta* preguntas){
 	
 	nombre p[50];
-	int puntuacion = 0,i,numero_aleatorio;
-	char eleccion[5];
-	srand(time(NULL));		
+	int puntuacion = 0,i;
+	char eleccion[5];		
 	
 	printf("Introduce tu nombre: ");
 	scanf("%s", p[0].nombre);
@@ -212,17 +208,16 @@ void nivel_heroe(Pregunta* preguntas){
 	printf("COMIENZA EL DESAFIO\n\n");
 	
 	
-	/*En esta parte se muestran las preguntas por pantalla y se le pide al usuario la solución*/
+	/*En esta parte se muestran las preguntas por pantalla y se le pide al usuario la soluciÃ³n*/
 	
-		for(i = 0; i<10;i++){
-		numero_aleatorio = rand() % 10+1;
-		printf("%s\n",preguntas[numero_aleatorio].pregunta);
-		printf("a) %s\n",preguntas[numero_aleatorio].opcion1);
-		printf("b) %s\n",preguntas[numero_aleatorio].opcion2);
-		printf("c) %s\n",preguntas[numero_aleatorio].opcion3);
-		printf("d) %s\n",preguntas[numero_aleatorio].opcion4);
+		for(i = 0; i<15;i++){
+		printf("%s\n",preguntas[i].pregunta);
+		printf("a) %s\n",preguntas[i].opcion1);
+		printf("b) %s\n",preguntas[i].opcion2);
+		printf("c) %s\n",preguntas[i].opcion3);
+		printf("d) %s\n",preguntas[i].opcion4);
 		
-		/*Hacemos un do while para que solo se puedan introducir números del 1 al 4*/
+		/*Hacemos un do while para que solo se puedan introducir a b c d*/
 		do{
 			printf("Introduce la opcion correcta -> ");
 			scanf("%s",&eleccion);	
@@ -251,12 +246,6 @@ void nivel_heroe(Pregunta* preguntas){
 	printf("%s, tu puntuacion es ", p[0].nombre);
 	printf("%i \n", puntuacion);
 	printf("Pulse una tecla para continuar");
-	printf("Echale un ojo a las recompensas obtenidas\n");
-    
-    FILE * fPointer;
-	fPointer = fopen("recompensasHeroe.txt", "r");
-	fclose(fPointer);
-	
 	
 	getch();
 	
@@ -266,9 +255,8 @@ void nivel_heroe(Pregunta* preguntas){
 void nivel_dios(Pregunta* preguntas){
 	
 	nombre p[50];
-	int puntuacion = 0,i,numero_aleatorio;
-	char eleccion[5];
-	srand(time(NULL));		
+	int puntuacion = 0,i;
+	char eleccion[5];		
 	
 	printf("Introduce tu nombre: ");
 	scanf("%s", p[0].nombre);
@@ -284,17 +272,16 @@ void nivel_dios(Pregunta* preguntas){
 	printf("COMIENZA EL DESAFIO\n\n");
 	
 	
-	/*En esta parte se muestran las preguntas por pantalla y se le pide al usuario la solución*/
+	/*En esta parte se muestran las preguntas por pantalla y se le pide al usuario la soluciÃ³n*/
 	
-		for(i = 0; i<10;i++){
-		numero_aleatorio = rand() % 10+1;
-		printf("%s\n",preguntas[numero_aleatorio].pregunta);
-		printf("a) %s\n",preguntas[numero_aleatorio].opcion1);
-		printf("b) %s\n",preguntas[numero_aleatorio].opcion2);
-		printf("c) %s\n",preguntas[numero_aleatorio].opcion3);
-		printf("d) %s\n",preguntas[numero_aleatorio].opcion4);
+		for(i = 0; i<20;i++){
+		printf("%s\n",preguntas[i].pregunta);
+		printf("a) %s\n",preguntas[i].opcion1);
+		printf("b) %s\n",preguntas[i].opcion2);
+		printf("c) %s\n",preguntas[i].opcion3);
+		printf("d) %s\n",preguntas[i].opcion4);
 		
-		/*Hacemos un do while para que solo se puedan introducir nÃºmeros del 1 al 4*/
+		/*Hacemos un do while para que solo se puedan introducir a b c d*/
 		do{
 			printf("Introduce la opcion correcta -> ");
 			scanf("%s",&eleccion);	
@@ -327,12 +314,6 @@ void nivel_dios(Pregunta* preguntas){
 	    printf("%i \n", puntuacion);
 	}
 	printf("Pulse una tecla para continuar");
-	
-	printf("Echale un ojo a las recompensas obtenidas\n");
-    
-    FILE * fPointer;
-	fPointer = fopen("recompensasDios.txt", "r");
-	fclose(fPointer);
 	
 	getch();
 	
