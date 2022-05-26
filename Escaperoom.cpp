@@ -71,15 +71,16 @@ int main(){
 	return 0;
 }
 
-void banner (){	
-printf("_____________________________________________________________________________________________________________________________________________________\n");
-printf("MMMMMM      MMMMMM         MMMMMMM      MMMMMMMMM     MMMMMMMMM        MMMMMMMMM  MMMMMMMMM        MM                     MM     MMMMMMM    MMMMMMMMM\n");
-printf("MM          MM            MM     MM     MM      M     MM               MM     MM  MM                MM                   MM     MM     MM   MM     MM\n");
-printf(" MM         MM            MM     MM     MMMMMMMMM     MMMMMM           MM     MM  MMMMM              MM                MM       MM     MM   MM     MM\n");
-printf("   MM       MM            MMMMMMMMM     MM            MMMMMM           MM     MM  MM                  MM     MM       MM        MMMMMMMMM   MM    MM\n");
-printf("    MM      MM            MM     MM     MM            MM               MM     MM  MM                   MM  MM   MM  MM          MM     MM   MM  MM   \n");
-printf("MMMMMM      MMMMMM        MM     MM     MM            MMMMMMMMM        MMMMMMMMM  MM                     MM       MM            MM     MM   MM    MMM\n");
-printf("_____________________________________________________________________________________________________________________________________________________\n");
+void banner (){
+	
+printf("______________________________________________________________________________________________________________________________________ \n");
+printf("MMMMMM      MMMMMM         MMMMMMM      MMMMMMMMM     MMMMMMMMM        MMMMMMMMM  MMMMMMMMM        MMMMMMMMM   MMMMMMMM  MMMMM         \n");
+printf("MM          MM            MM     MM     MM      M     MM               MM     MM  MM               MM          MM    MM  MM   MM       \n");
+printf(" MM         MM            MM     MM     MMMMMMMMM     MMMMMM           MM     MM  MMMMM            MM          MM    MM  MM    MM      \n");
+printf("   MM       MM            MMMMMMMMM     MM            MMMMMM           MM     MM  MM               MM   MMMM   MM    MM  MM   MM       \n");
+printf("    MM      MM            MM     MM     MM            MM               MM     MM  MM               MM     MM   MM    MM  MM   MM       \n");
+printf("MMMMMM      MMMMMM        MM     MM     MM            MMMMMMMMM        MMMMMMMMM  MM               MMMMMMMMM   MMMMMMMM  MM MM         \n");
+printf("______________________________________________________________________________________________________________________________________")
 }
 
 void llenar_estructuras(Pregunta* preguntas){
