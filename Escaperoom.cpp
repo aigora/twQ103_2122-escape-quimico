@@ -15,6 +15,7 @@ typedef struct{
 	char opcion4[250];
 	char correcta[250];
 }Pregunta;
+
 //Funcion para que se imprima el banner del programa
 void banner ();
 
@@ -187,6 +188,7 @@ void nivel_mortal(Pregunta* preguntas){
 	
 	FILE * fPointer;
 	fPointer = fopen("recompensasMortal.txt", "r");
+	
 	fclose(fPointer);
 	
 	getch();
@@ -214,7 +216,7 @@ void nivel_heroe(Pregunta* preguntas){
 	printf("COMIENZA EL DESAFIO\n\n");
 	
 	
-	/*En esta parte se muestran las preguntas por pantalla y se le pide al usuario la solución*/
+	/*En esta parte se muestran las preguntas por pantalla y se le pide al usuario la solucion*/
 	
 		for(i = 0; i<15;i++){
 		printf("%s\n",preguntas[i].pregunta);
@@ -255,6 +257,7 @@ void nivel_heroe(Pregunta* preguntas){
 	
 	FILE * fPointer;
 	fPointer = fopen("recompensasHeroe.txt", "r");
+	
 	fclose(fPointer);
 	
 	getch();
@@ -282,7 +285,7 @@ void nivel_dios(Pregunta* preguntas){
 	printf("COMIENZA EL DESAFIO\n\n");
 	
 	
-	/*En esta parte se muestran las preguntas por pantalla y se le pide al usuario la solución*/
+	/*En esta parte se muestran las preguntas por pantalla y se le pide al usuario la solucion*/
 	
 		for(i = 0; i<20;i++){
 		printf("%s\n",preguntas[i].pregunta);
