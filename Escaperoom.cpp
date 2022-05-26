@@ -38,9 +38,15 @@ int main(){
 	nombre p[50];
 	Pregunta preguntas[50];
 	llenar_estructuras(preguntas);
+	int numJugadores;
 	
 	banner ();
 	printf("BIENVENIDO A SCAPE OF WAR\n");
+	do {
+		printf("Introduce el numero de guerreros que vais a participar, el maximo para esta aventura es 4\n");
+		scanf("%d",&numJugadores);
+		printf("Has seleccionado %d jugadores",numJugadores);
+	} while (numJugadores>4);
 
 	while(n!=4){
 		printf("-----------ELIJA QUE AVENTURA DESEA LLEVAR-----------\n");
@@ -177,6 +183,11 @@ void nivel_mortal(Pregunta* preguntas){
 	printf("%i \n", puntuacion);
 
 	printf("Pulse una tecla para elegir volver a jugar o salir");
+	printf("Echale un ojo a las recompensas obtenidas\n");
+	
+	FILE * fPointer;
+	fPointer = fopen("recompensasMortal.txt", "r");
+	fclose(fPointer);
 	
 	getch();
 	
@@ -241,6 +252,10 @@ void nivel_heroe(Pregunta* preguntas){
 	printf("%s, tu puntuacion es ", p[0].nombre);
 	printf("%i \n", puntuacion);
 	printf("Pulse una tecla para continuar");
+	
+	FILE * fPointer;
+	fPointer = fopen("recompensasHeroe.txt", "r");
+	fclose(fPointer);
 	
 	getch();
 	
@@ -309,6 +324,11 @@ void nivel_dios(Pregunta* preguntas){
 	    printf("%i \n", puntuacion);
 	}
 	printf("Pulse una tecla para continuar");
+	
+	FILE * fPointer;
+	fPointer = fopen("recompensasDios.txt", "r");
+	
+	fclose(fPointer);
 	
 	getch();
 	
