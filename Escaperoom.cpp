@@ -86,7 +86,7 @@ printf(" MM         MM            MM     MM     MMMMMMMMM     MMMMMM           M
 printf("   MM       MM            MMMMMMMMM     MM            MMMMMM           MM     MM  MM               MM   MMMM   MM    MM  MM   MM       \n");
 printf("    MM      MM            MM     MM     MM            MM               MM     MM  MM               MM     MM   MM    MM  MM   MM       \n");
 printf("MMMMMM      MMMMMM        MM     MM     MM            MMMMMMMMM        MMMMMMMMM  MM               MMMMMMMMM   MMMMMMMM  MM MM         \n");
-printf("______________________________________________________________________________________________________________________________________")
+printf("________________________________________________________________________________________________________________________________________\n");
 }
 
 void llenar_estructuras(Pregunta* preguntas){
