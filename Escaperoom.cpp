@@ -39,15 +39,10 @@ int main(){
 	nombre p[50];
 	Pregunta preguntas[50];
 	llenar_estructuras(preguntas);
-	int numJugadores;
 	
 	banner ();
 	printf("BIENVENIDO A SCAPE OF WAR\n");
-	do {
-		printf("Introduce el numero de guerreros que vais a participar, el maximo para esta aventura es 4\n");
-		scanf("%d",&numJugadores);
-		printf("Has seleccionado %d jugadores",numJugadores);
-	} while (numJugadores>4);
+	
 
 	while(n!=4){
 		printf("-----------ELIJA QUE AVENTURA DESEA LLEVAR-----------\n");
