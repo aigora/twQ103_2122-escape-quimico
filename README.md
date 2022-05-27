@@ -8,7 +8,6 @@ En función del nivel seleccionado, irás ganando ciertos puntos y en función d
 ## Integrantes del equipo
 Ana Recio @anarecio02 
 Raúl del Campo @LordDementus
-María Pereyra  @mariapereyra 
 
 ## Objetivos del trabajo
 - Desafiar realmente tus conocimientos sobre el juego y comprobar si eres un verdadero fan de la saga.
