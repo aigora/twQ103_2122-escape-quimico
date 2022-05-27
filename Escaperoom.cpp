@@ -40,7 +40,7 @@ int main(){
 	Pregunta preguntas[50];
 	llenar_estructuras(preguntas);
 	
-	printf("BIENVENIDO A SCAPE OF WAR\n\n");
+	printf("BIENVENIDO A SCAPE OF GOD\n\n");
 	banner ();
 	
 
