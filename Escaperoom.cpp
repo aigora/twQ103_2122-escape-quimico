@@ -35,7 +35,7 @@ void llenar_estructuras(Pregunta* preguntas);
 
 
 int main(){
-	int n;
+	int n,numJugadores;
 	nombre p[50];
 	Pregunta preguntas[50];
 	llenar_estructuras(preguntas);
@@ -43,7 +43,11 @@ int main(){
 	printf("BIENVENIDO A SCAPE OF GOD\n");
 	banner ();
 	
-
+	do{
+		printf("Introduce el numero de guerreros que vais a participar\n");
+		scanf("%d",&numJugadores);
+	} while (numJugadores>4);
+	
 	while(n!=4){
 		printf("-----------ELIJA QUE AVENTURA DESEA LLEVAR-----------\n");
 		printf("[1] Para aquellos mortales que deseen una aventura \n");
